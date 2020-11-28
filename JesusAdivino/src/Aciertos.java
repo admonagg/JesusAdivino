@@ -3,11 +3,13 @@ import java.util.Scanner;
 Primero se genera el número aleatorio, a continuación se pide al usuario que introduzca un número entero.
 Si el valor es menor o mayor del número generado, se proporciona un texto orientativo y continua esperando un nuevo número. 
 En caso de acierto se anuncia el éxito, y la aplicación finaliza.*/
+
+//Funciona correctamente, corregido por ANTON GEYKO GEYKO.
 public class Aciertos {
 
     public static void main(String[] args) {
         int n = 0,cont = 0;
-        int x = (int) ((50-10)*Math.random()+10);
+        /*int x = (int) ((50-10)*Math.random()+10);
         //System.out.print(x);
         Scanner sc = new Scanner(System.in);
         do {
@@ -21,6 +23,11 @@ public class Aciertos {
             cont++;
         } while (n != x);
         System.out.print("Exelente!!! Haz acertado , No. de intentos: "+cont );
-        sc.close();
+        sc.close();*/
+        
+        for(int i=1 ; i<=100; i++) {
+        	int x = (int) ((50-10)*Math.random()+10);
+            System.out.println(x);
+        }
     }
 }
